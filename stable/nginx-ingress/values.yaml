@@ -5,7 +5,7 @@ controller:
   name: controller
   image:
     repository: quay.io/kubernetes-ingress-controller/nginx-ingress-controller
-    tag: "0.22.0"
+    tag: "0.23.0"
     pullPolicy: IfNotPresent
     # www-data -> uid 33
     runAsUser: 33
@@ -300,7 +300,7 @@ defaultBackend:
   name: default-backend
   image:
     repository: k8s.gcr.io/defaultbackend
-    tag: "1.4"
+    tag: "1.5"
     pullPolicy: IfNotPresent
 
   extraArgs: {}
