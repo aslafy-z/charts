@@ -31,8 +31,6 @@ controller:
     hostPorts:
       http: 80
       https: 443
-      ## healthz endpoint
-      stats: 18080
 
   ## Required only if defaultBackend.enabled = false
   ## Must be <namespace>/<service_name>

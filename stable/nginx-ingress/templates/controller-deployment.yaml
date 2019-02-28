@@ -118,15 +118,10 @@ spec:
             - name: https
               containerPort: 443
               protocol: TCP
-          {{- if .Values.controller.stats.enabled }}
-            - name: stats
-              containerPort: 18080
-              protocol: TCP
-            {{- if .Values.controller.metrics.enabled }}
+          {{- if .Values.controller.metrics.enabled }}
             - name: metrics
               containerPort: 10254
               protocol: TCP
-            {{- end }}
           {{- end }}
           {{- range $key, $value := .Values.tcp }}
             - name: "{{ $key }}-tcp"
