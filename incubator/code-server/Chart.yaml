@@ -1,0 +1,10 @@
+name: code-server
+home: https://github.com/codercom/code-server/tree/master/doc
+version: 0.1.0
+description: VS Code running on a remote server, accessible through the browser.
+apiVersion: v1
+sources:
+- https://github.com/codercom/code-server
+maintainers:
+- name: Zadkiel
+  email: hello@zadkiel.fr
